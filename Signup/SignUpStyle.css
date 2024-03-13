@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    margin: 0;
+}
+
+li a:hover {
+    background-color: blue;
+}
+
+li {
+    display: inline;
+    margin: 1rem;
+}
+
+.navBar {
+    text-align: center;
+    height: 80px;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: #fff;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.Logo {
+    float: left;
+    filter: invert(100%);
+    width: 80px;
+    height: 80px;
+}
+
+.container {
+    width: 90%;
+    padding: 16px;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    border: 10px solid white;
+    border-radius: 25px;
+    background-color: #fff;
+    margin-top: 10%;
+}
+
+input[type=text], input[type=password],input[type=email] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+/* Media Queries */
+@media screen and (min-width: 600px) {
+    .container {
+        width: 400px;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(32, 32, 32);
+    font-weight: bold;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+@media screen and (max-width: 600px) {
+    footer {
+        position: static;
+        padding: 10px;
+    }
+}
