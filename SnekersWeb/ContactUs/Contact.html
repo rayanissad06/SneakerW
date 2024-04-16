@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Définition du jeu de caractères et du viewport pour le responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact US</title>
+    <!-- Lien vers le fichier CSS externe -->
+    <link rel="stylesheet" href="../Styles.css">
+    <script src="contact.js"></script>
+   
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <div class="navBar">
+        <ul>
+            <!-- Logo de la société -->
+            <li><img src="../assets/logoJordan.png" class="Logo"></li>
+            <!-- Liens de navigation -->
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Products/PageProducts.html">Product</a></li>
+            <li><a href="AboutPage.html">About</a></li>
+            <li><a href="../Signup/SignUp.html">Sign up</a></li>
+            <li><a href="../ContactUs/Contact.html">Contact US</a></li>
+        </ul>
+    </div>
+    <div class="centre">
+    <form onsubmit="showMessage(event)"> <!-- Passer l'événement à la fonction showMessage -->
+        <label for="fname">Prénom:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Nom:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message"></textarea><br>
+        <input type="submit" value="Envoyer">
+    </form>
+</div>
+    
+    <footer >
+        10-03-2024 © 2024 Rayan Issad
+         & <a href="https://github.com/rayanissad06"> MyGitHUb</a>
+     </footer>
+</body>
+</html>

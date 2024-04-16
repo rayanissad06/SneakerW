@@ -1,0 +1,264 @@
+/* Style général du corps de la page */
+body {
+    background-color: black;
+    margin: 0;
+}
+
+/* Style de la barre de navigation */
+.navBar {
+    text-align: center;
+    height: 80px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Style des liens */
+a {
+    color: #fff;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+/* Style des paragraphes et des liens */
+p,
+a {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Style du logo */
+.Logo {
+    float: left;
+    filter: invert(100%);
+    width: 80px;
+    height: 80px;
+}
+
+/* Style du slogan */
+.Slogan {
+    text-align: center;
+}
+
+/* Style du titre du slogan */
+.Slogan h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 42px;
+    font-weight: 300;
+    padding: 30px 0;
+    color: #fff;
+}
+
+/* Style des liens lors du survol */
+li a:hover {
+    background-color: blue;
+}
+
+/* Style des éléments de liste */
+li {
+    display: inline;
+    margin: 1rem;
+}
+
+/* Style de l'image des chaussures */
+.accShoes {
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+/* Style du conteneur de l'image des chaussures */
+.StyleAccShoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style du conteneur de la carte */
+.CardDeco {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style de la liste dans le conteneur de la carte */
+.CardDeco ul {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Style des éléments de liste dans le conteneur de la carte */
+.CardDeco li {
+    display: flex;
+    flex-basis: auto;
+    margin: 1rem;
+}
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Style pour le fond sombre derrière la popup */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* Style de l'image décorative */
+.imgDeco {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+}
+
+/* Style de la carte */
+.card {
+    display: inline-block;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 white;
+    transition: 0.3s;
+    background-color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    width: auto;
+    border-radius: 5%;
+}
+
+/* Style de la carte à propos */
+.cardAbout {
+    align-items: center;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 white;
+    transition: 0.3s;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 900px;
+    border-radius: 5%;
+}
+
+/* Style du conteneur central */
+.centre {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style de la carte lors du survol */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Style du conteneur */
+.container {
+    padding: 2px 16px;
+}
+
+/* Style du pied de page */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(32, 32, 32);
+    font-weight: bold;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+form {
+   
+    
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'ROBOTo';
+    font-weight: bold;
+
+    
+}
+
+input, textarea {
+    
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries pour les écrans de taille inférieure à 600px */
+@media screen and (max-width: 600px) {
+    footer {
+        position: static;
+        padding: 10px;
+    }
+}
+
+/* Media Queries pour les écrans de taille inférieure à 600px */
+@media (max-width:600px) {
+    li {
+        display: block;
+        margin: 1rem;
+    }
+
+    .card {
+        flex: 1 0 calc(33.33% - 2rem);
+    }
+
+    .CardDeco .CardDeco {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .cardAbout {
+        width: 100%;
+    }
+
+}
+
+/* Media Queries pour les écrans de taille supérieure à 900px */
+@media (min-width: 900px) {
+    .card {
+        flex: 1 0 calc(25% - 2rem);
+    }
+}
